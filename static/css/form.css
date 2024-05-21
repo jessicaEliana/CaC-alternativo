@@ -1,0 +1,140 @@
+:root {
+    --color-principal: #ffffbf;
+    --color-secundario: #f57433;
+    --color-claro: rgb(255, 255, 255);
+    --color-oscuro: rgb(0, 0, 0);
+}
+
+.consulta {
+    position:static;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center
+
+}
+
+.consulta h2{
+    margin: 50px 0;
+    text-align: center;
+    padding: 50px 0;
+    border-bottom: 1px solid black;
+}
+
+.consulta form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .username {
+    position: relative;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+
+.username input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.username label{
+    position: absolute;
+    top: 0%;
+    left: 5px;
+    color: black;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+
+}
+.username textarea{
+    
+    padding: 0;
+}
+
+/*Se crea class CLEAR para adaptar elementos extras del FORM*/
+.clear{
+    position: relative;
+    border:none;
+    margin: 30px 0;
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+    text-align: left;
+    width: 100%; /* Establece el ancho del textarea al 100% del ancho del contenedor */
+    box-sizing: border-box; /* Esto asegura que el ancho incluya el padding y el borde */
+    margin-bottom: auto;
+}
+/*Configuracion para el text area*/
+.textarea{
+    background-color: var(--color-secundario);
+    border-radius: 5px;
+
+}
+/*Configuración para boton de subir imagen*/
+.file-input {
+    display: none;
+}
+
+.custom-file-upload {
+    display: inline-block;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: var(--color-secundario);
+    color: var(--color-oscuro);
+    border-radius: 4px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+.username span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--color-secundario)
+}
+
+.boton-enviar {
+    background-color: var(--color-oscuro); /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    margin: 10px 0;
+    padding: 10px 20px; /* Espacio interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: inline-block; /* Mostrar como bloque en línea */
+    font-size: 16px; /* Tamaño del texto */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cursor de apuntador */
+  }
+  
+  .boton-enviar:hover {
+    background-color: var(--color-secundario); /* Cambio de color de fondo al pasar el ratón */
+  }
+  
+  .boton-enviar:active {
+    background-color: var(--color-secundario); /* Cambio de color de fondo al hacer clic */
+  }
+  
+
+  .error{
+    color: red;
+    margin-bottom: 5px;
+}
