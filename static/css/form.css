@@ -10,7 +10,7 @@
     top: 50%;
     left: 50%;
     /* transform: translate(-50%, -50%); */
-    width: 400px;
+    width: 95%;
     background: white;
     border-radius: 10px;
     margin: auto;
@@ -137,4 +137,10 @@ form .username {
   .error{
     color: red;
     margin-bottom: 5px;
+}
+
+@media screen and (min-width: 768px) {
+    .consulta {
+        width: 400px;
+    }
 }
