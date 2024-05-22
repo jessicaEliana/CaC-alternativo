@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,9 +25,11 @@
     <!-- logo y navegación -->
     <header>
         <!-- logo -->
-        <div class="logo">
-            <img src="./static/img/Logo.png" alt="">
-            <h1>Codo a Codo Bakery</h1>
+        <div>
+            <a class="logo" href="./index.html">
+                <img src="./static/img/Logo.png" alt="">
+                <h1 style="color: black;">Codo a Codo Bakery</h1>
+            </a>
 
         </div>
 
@@ -41,7 +43,7 @@
                 <!-- ITEM PRODUCTOS -->
                 <li class="item-menu">
                     <!-- ENLACE PRODUCTOS -->
-                    <a class="anchor-menu" href=""><i id="icon-menu" class="fa-solid fa-bars no-bg product-word"></i></a>
+                    <a class="anchor-menu" href=""><i class="fa-solid fa-bars no-bg product-word"></i></a>
                     <!-- LISTA DE PRODUCTOS -->
                     <ul class="enlace">
                         <!-- ITEM TORTAS -->
@@ -68,7 +70,7 @@
                 <!-- ITEM INICO O HOME -->
                 <li class="item-menu">
                     <!-- ENLACE HOME-->
-                    <a class="anchor-menu" href=""><i id="icon-home" class="fa-solid fa-house no-bg home-word"></i></a>
+                    <a class="anchor-menu" href=""><i class="fa-solid fa-house no-bg home-word"></i></a>
                 </li>
 
                 <!-- ITEM NOSOTROS -->
@@ -83,15 +85,11 @@
                 <li class="item-menu">
 
                     <!-- ENLACE CONTACTO-->
-                    <a class="anchor-menu" href="#contact"><i id="icon-contact" class="fa-solid fa-user no-bg contact-word"></i></a>
+                    <a class="anchor-menu" href="#contact"><i class="fa-solid fa-user no-bg contact-word"></i></a>
 
                 </li>
             </ul>
         </nav>
-
-        
-
-        </div>
 
         <div class="menu-mobile">
             <div id="menu">
@@ -209,27 +207,27 @@
                     <div class="error" id="error-firstname"></div>
 
                     <div class="username">
-                    <label for="apellido">Apellido</label><br>
+                    <label>Apellido</label><br>
                     <!-- <input type="text" id="apellido" name="apellido" required></div><br> -->
                     <input type="text" name="lastname" id="lastname"></div><br>
                     <div class="error" id="error-lastname"></div>
 
                     <div class="username">
-                    <label for="apellido">Correo electronico</label><br>
+                    <label>Correo electronico</label><br>
                     <!-- <input type="text" id="Correo" name="Correo" required></div><br> -->
                     <input type="email" name="email" id="email"></div><br>
                     <div class="error" id="error-email"></div>
         
                     <div class="username">
-                        <label for="telefono">Telefono</label><br>
+                        <label>Telefono</label><br>
                         <input type="tel" id="Telefono" name="Telefono" required></div><br>
         
                     <div class="username">
-                        <label for="fechaPedido">Fecha de Pedido:</label><br>
-                        <input type="date" id="fechaPedido" name="fechaPedido" min="" required></div><br>
+                        <label>Fecha de Pedido:</label><br>
+                        <input type="date" id="fechaPedido" name="fechaPedido" required></div><br>
                     
                     <div class="clear">
-                        <label for="tipoProducto">Tipo de Producto:</label><br>
+                        <label>Tipo de Producto:</label><br>
                         <select class="boton-enviar" id="tipoProducto" name="tipoProducto" required onchange="updateProductos()">
                             <option value="">Seleccione un tipo de producto</option>
                             <option value="tortas">Tortas</option>
@@ -238,24 +236,24 @@
                         </select></div><br>
                     
                     <div class="clear">
-                        <label for="producto">Producto:</label><br>
+                        <label>Producto:</label><br>
                         <select class="boton-enviar" id="producto" name="producto" required>
                             <option value="">Seleccione un producto</option>
                         </select></div><br>
                     
                     <div class="clear">
-                    <label for="apellido">Escribinos tu consulta</label><br>
-                    <textarea class="clear textarea" type="text" id="consulta" name="consulta" required></textarea></div><br>
+                    <label>Escribinos tu consulta</label><br>
+                    <textarea class="clear textarea" name="consulta" required></textarea></div><br>
                     <br>
         
                     <div class="clear">
-                        <label for="pedidoConsulta">Seleccione:</label><br>
+                        <label>Seleccione:</label><br>
                         <input type="checkbox" id="pedido" name="pedidoConsulta" value="pedido"> Pedido
                         <input type="checkbox" id="consulta" name="pedidoConsulta" value="consulta"> Consulta
                     </div><br>
         
                     <div class="clear">
-                        <label class="custom-file-upload" for="imagen">Subir Comprobante de Pago</label>
+                        <label class="custom-file-upload">Subir Comprobante de Pago</label>
                         <input class="file-input" type="file" id="imagen" name="imagen">
                     </div><br>
         
@@ -273,13 +271,13 @@
         <!-- donde estamos -->
             <div class="map-location">
                 <p class="text-desc">¿Donde estamos?</p>
-                <iframe class="iframe-cont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6726983.846388018!2d-58.3843478!3d-34.5874666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa546f3c19d%3A0x9d528d1f08195c58!2sAtelier%20Pastry%20-%20Patisserie!5e0!3m2!1ses-419!2sar!4v1713633313182!5m2!1ses-419!2sar" width="350px" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe class="iframe-cont" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6726983.846388018!2d-58.3843478!3d-34.5874666!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa546f3c19d%3A0x9d528d1f08195c58!2sAtelier%20Pastry%20-%20Patisserie!5e0!3m2!1ses-419!2sar!4v1713633313182!5m2!1ses-419!2sar" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <!-- lo que hacemos -->
             <div class="video-ref">
                 <p class="text-desc">Lo que hacemos</p>
-                <iframe class="iframe-cont"  width="600" height="450" src="https://www.youtube.com/embed/JkrYkFxL29A" title="CHEESECAKE CLÁSICO | La receta del clásico NEW YORK Cheesecake - CUKit!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe class="iframe-cont"  width="600" height="450" src="https://www.youtube.com/embed/JkrYkFxL29A" title="CHEESECAKE CLÁSICO | La receta del clásico NEW YORK Cheesecake - CUKit!" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
 
                 <!-- boton de contacto -->
@@ -297,7 +295,7 @@
     <footer class="">
 
         <!-- redes -->
-        <a class="img-footer" href="https://github.com/jessicaEliana/bakery-projet-CaC"><img src="./static/img/icons8-github-48.png" alt="enlace al repositorio del proyecto" title="enlace al repositorio del proyecto"></a>
+        <a class="img-footer" href="https://github.com/jessicaEliana/CaC-alternativo"><img src="./static/img/icons8-github-48.png" alt="enlace al repositorio del proyecto" title="enlace al repositorio del proyecto"></a>
         <a class="img-footer" href="#"><img src="./static/img/icons8-whatsapp-48.png" alt="enlace a whatsup"></a>
         <a class="img-footer" href="#"><img src="./static/img/icons8-instagram-48.png" alt="enlace a instagram"></a>
         <a class="img-footer" href="#"><img src="./static/img/icons8-youtube-48.png" alt="enlace a youtube"></a>
